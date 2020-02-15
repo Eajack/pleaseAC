@@ -51,7 +51,7 @@ class Util(object):
 			for i in range(len(numbers)):
 				if numbers[i].strip() in fileNames:
 					link = 'https://github.com/Eajack/pleaseAC/blob/master/codes/{}/{}.cpp'\
-						.format(title,numbers[i])
+						.format(title,numbers[i].strip())
 					writeLines.append('- [{}]({})\n'.format(numbers[i].strip(), link))
 
 		#3- 生成readme
