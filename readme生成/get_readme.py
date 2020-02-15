@@ -50,7 +50,8 @@ class Util(object):
 			writeLines.append('完成情况：{}\n'.format(len(fileNames)))
 			for i in range(len(numbers)):
 				if numbers[i].strip() in fileNames:
-					link = r''
+					link = 'https://github.com/Eajack/pleaseAC/blob/master/codes/1. leetcode_cn-original/{}.cpp'\
+						.format(numbers[i])
 					writeLines.append('- [x] [{}]({})\n'.format(numbers[i].strip(), link))
 
 		#3- 生成readme
