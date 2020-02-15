@@ -52,7 +52,7 @@ class Util(object):
 				if numbers[i].strip() in fileNames:
 					link = 'https://github.com/Eajack/pleaseAC/blob/master/codes/{}/{}.cpp'\
 						.format(title,numbers[i])
-					writeLines.append('- [x] [{}]({})\n'.format(numbers[i].strip(), link))
+					writeLines.append('- [{}]({})\n'.format(numbers[i].strip(), link))
 
 		#3- 生成readme
 		with open(self.output_readme, 'w', encoding='utf-8') as wf: 
