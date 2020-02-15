@@ -8,7 +8,7 @@ class Util(object):
 		self.output_readme = r'../readme.md'
 
 		#1.leetcode_cn 普通算法题
-		self.file1Finished = r'../codes/1. leetcode_cn-original'
+		self.file1Finished = r'../codes/1.leetcode_cn-original'
 		self.file1All = r'leetcode_cn-original-1000题.txt'
 
 		# 统筹
@@ -50,8 +50,8 @@ class Util(object):
 			writeLines.append('完成情况：{}\n'.format(len(fileNames)))
 			for i in range(len(numbers)):
 				if numbers[i].strip() in fileNames:
-					link = 'https://github.com/Eajack/pleaseAC/blob/master/codes/1. leetcode_cn-original/{}.cpp'\
-						.format(numbers[i])
+					link = 'https://github.com/Eajack/pleaseAC/blob/master/codes/{}/{}.cpp'\
+						.format(title,numbers[i])
 					writeLines.append('- [x] [{}]({})\n'.format(numbers[i].strip(), link))
 
 		#3- 生成readme
